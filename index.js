@@ -115,7 +115,7 @@ script.onload = () => {
                 window.Telegram.WebApp.expand();
                 window.Telegram.WebApp.enableClosingConfirmation();
                 window.Telegram.WebApp.disableVerticalSwipes();
-                window.unityInstance.SendMessage('JSConnectManager', 'POST_LoginTelegram', window.Telegram.WebApp.initData);
+                //window.unityInstance.SendMessage('JSConnectManager', 'POST_LoginTelegram', window.Telegram.WebApp.initData);
             }
         } catch (error) {
             alert("Cannot get Telegram Data, please reload Bot");
