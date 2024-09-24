@@ -73,7 +73,7 @@ var config = {
     streamingAssetsUrl: "StreamingAssets",
     companyName: "ADNX",
     productName: "Snooze",
-    productVersion: "1.0",
+    productVersion: "0.6",
     showBanner: unityShowBanner,
 };
 
