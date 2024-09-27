@@ -71,9 +71,9 @@ var config = {
     frameworkUrl: buildUrl + "/Snooze.framework.js",
     codeUrl: buildUrl + "/Snooze.wasm",
     streamingAssetsUrl: "StreamingAssets",
-    companyName: "ADNX",
+    companyName: "DefaultCompany",
     productName: "Snooze",
-    productVersion: "0.6",
+    productVersion: "1.0",
     showBanner: unityShowBanner,
 };
 
