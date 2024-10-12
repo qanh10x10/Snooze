@@ -72,7 +72,7 @@ var config = {
     codeUrl: buildUrl + "/Snooze.wasm",
     streamingAssetsUrl: "StreamingAssets",
     companyName: "DefaultCompany",
-    productName: "Snooze",
+    productName: "Duck_Go",
     productVersion: "1.0",
     showBanner: unityShowBanner,
 };
