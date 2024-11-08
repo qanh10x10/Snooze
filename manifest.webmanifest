@@ -1,6 +1,6 @@
 {
-    "name": "C# TonConnect",
-    "short_name": "C# TonConnect",
+    "name": "Social_app",
+    "short_name": "Social_app",
     "start_url": "index.html",
     "display": "fullscreen",
     "background_color": "#231F20",
