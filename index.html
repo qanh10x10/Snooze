@@ -3,18 +3,24 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Social_app</title>
+    <title>Unity WebGL Player | BlindBag</title>
     <link rel="shortcut icon" href="TemplateData/favicon.png">
     <link rel="stylesheet" href="TemplateData/style.css">
     <link rel="manifest" href="manifest.webmanifest">
 </head>
 <body>
     <div id="unity-container">
-        <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
+        <canvas id="unity-canvas" width=540 height=960 tabindex="-1"></canvas>
         <div id="unity-loading-bar">
-            <div id="unity-logo"></div>
-            <div id="unity-progress-bar-empty">
-                <div id="unity-progress-bar-full"></div>
+            <div class="box__full">
+                <!-- <div id="unity-logo"></div> -->
+                <div class="progress__wrap">
+                    <div id="unity-progress-bar-empty">
+                        <div class="box__full">
+                            <div id="unity-progress-bar-full"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div id="unity-warning"> </div>

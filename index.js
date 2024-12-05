@@ -71,8 +71,8 @@ var config = {
     frameworkUrl: buildUrl + "/Snooze.framework.js",
     codeUrl: buildUrl + "/Snooze.wasm",
     streamingAssetsUrl: "StreamingAssets",
-    companyName: "ADNX",
-    productName: "Social_app",
+    companyName: "DefaultCompany",
+    productName: "BlindBag",
     productVersion: "1.0",
     showBanner: unityShowBanner,
 };
@@ -115,7 +115,15 @@ script.onload = () => {
                 window.Telegram.WebApp.expand();
                 window.Telegram.WebApp.enableClosingConfirmation();
                 window.Telegram.WebApp.disableVerticalSwipes();
-                //window.unityInstance.SendMessage('JSConnectManager', 'POST_LoginTelegram', window.Telegram.WebApp.initData);
+                if (typeof window.Telegram.WebApp.requestFullscreen === 'function') {
+                    if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+                        window.Telegram.WebApp.requestFullscreen();
+                    } else {
+                        console.log("Not opening fullscreen due to desktop playback.");
+                    }
+                } else {
+                    console.log("requestFullscreen is not supported.");
+                }
             }
         } catch (error) {
             alert("Cannot get Telegram Data, please reload Bot");
